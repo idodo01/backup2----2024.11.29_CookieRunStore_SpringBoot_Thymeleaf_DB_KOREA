@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/admin/fileupload}" method="post" enctype="multipart/form-data">
+    <input type="file" name="my_files" accept="image/*" multiple>
+    <button>전송</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
